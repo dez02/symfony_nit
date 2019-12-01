@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<h1>{{ title | capitalize }}</h1>
+	<a href="{{ path('hello', {'prenom': 'Dez', 'age': 27}) }}">Allez voir hello</a>
+	<p>Comment allez-vous?</p>
+	{% if age >= 18 %}
+	<p>Vous êtes un adulte.</p>
+	{% elseif age >=12 %}
+	<p>Vous êtes un adolescent!</p>
+	{% else %}
+		<p>Vous êtes un enfant!</p>
+	{% endif %}
+	<ul>
+		{% for prenom, age in prenoms %}
+			<li>{{ prenom }} a {{ age }} ans</li>
+		{% endfor %}
+	</ul>
+
+
+</body>
+</html>
