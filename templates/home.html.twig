@@ -1,5 +1,12 @@
 {% extends 'base.html.twig' %}
 
+
+{% block title %}
+	Bienvenue sur  le meilleur réseau d'appartements!
+
+{% endblock %}
+
+
 {% block body %}
 <div class="container">
 	<div class="jumbotron mt-3">
@@ -12,7 +19,7 @@
 			<a class="btn btn-primary btn-lg" href="#" role="button">Voir nos annonces</a>
 		</p>
 	</div>
-	<h2>Nos appartements stars</h2>
+	<h2 class="h1 mt-3 mb-4">Nos appartements stars!</h2>
 	<div class="row mt-5">
 		<div class="col-md-4">
 			<div class="card bg-light mb-3">
@@ -23,7 +30,7 @@
 				<img src="https://via.placeholder.com/300" alt="img de l'appart"
 					style="height:200px; width:100%; display: block;">
 				<div class="card-body">
-					<h4 class="card-title">Appartement de Ouf!</h4>
+					<h4 class="card-title text-center">Appartement de Ouf!</h4>
 					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat animi quis veniam quae
 						eligendi atque inventore ad voluptas minima velit.</p>
 					<a href="#" class="btn btn-secondary">En savoir plus</a>
@@ -39,7 +46,7 @@
 				<img src="https://via.placeholder.com/300" alt="img de l'appart"
 					style="height:200px; width:100%; display: block;">
 				<div class="card-body">
-					<h4 class="card-title">Appartement de Ouf!</h4>
+					<h4 class="card-title text-center">Appartement de Ouf!</h4>
 					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat animi quis veniam quae
 						eligendi atque inventore ad voluptas minima velit.</p>
 					<a href="#" class="btn btn-secondary">En savoir plus</a>
@@ -55,7 +62,7 @@
 				<img src="https://via.placeholder.com/300" alt="img de l'appart"
 					style="height:200px; width:100%; display: block;">
 				<div class="card-body">
-					<h4 class="card-title">Appartement de Ouf!</h4>
+					<h4 class="card-title text-center">Appartement de Ouf!</h4>
 					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat animi quis veniam quae
 						eligendi atque inventore ad voluptas minima velit.</p>
 					<a href="#" class="btn btn-secondary">En savoir plus</a>
@@ -63,5 +70,35 @@
 			</div>
 		</div>
 	</div>
+	<h2 class="h1 mt-3 mb-4">Nos propriétaires stars!</h2>
+	<div class="row">
+		<div class="col">
+			<div class="card border-secondary mb-3">
+				<div class="card-body">
+					<h4 class="card-title">Désirée</h4>
+					<hr>
+					<div class="card-text">
+						<img src="https://via.placeholder.com/64" class="float-left mr-3" alt="avatar de toto">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, consectetur.</p>
+						<a href="#" class="btn btn-success float-right">En savoir plus!</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card border-secondary mb-3">
+				<div class="card-body">
+					<h4 class="card-title">Désirée</h4>
+					<hr>
+					<div class="card-text">
+						<img src="https://via.placeholder.com/64" class="float-left mr-3" alt="avatar de toto">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, consectetur.</p>
+						<a href="#" class="btn btn-success float-right">En savoir plus!</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
+
 {% endblock body %}
